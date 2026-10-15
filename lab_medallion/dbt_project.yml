@@ -18,3 +18,11 @@ models:
     silver:
       +materialized: view
       +schema: silver
+
+seeds:
+  lab_medallion:
+    zip_ranges:
+      +column_types:
+        state: varchar
+        zip_min: varchar
+        zip_max: varchar
